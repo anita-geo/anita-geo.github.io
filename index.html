@@ -46,6 +46,18 @@
       color: #fff;
     }
 
+    /* Default: mobile first */
+    .home-section {
+      height: 120vh;
+    }
+
+    /* Laptops and tablets */
+    @media (min-width: 768px) {
+      .home-section {
+        height: 100vh;
+      }
+    }
+
     .card {
       background: #1a1a1a;
       color: #f1f1f1;
@@ -126,24 +138,27 @@
   </header>
 
   <!-- Home Section with Image and Animation -->
-  <section id="home" class="d-flex align-items-center" style="height: 100vh;">
+  <section id="home" class="d-flex align-items-center home-section">
     <div class="container text-center">
       <h1 class="display-4 mb-3">Hello, I'm <span class="text-primary">Anita George</span></h1>
       <img src=".\images\Intro_1.jpeg" alt="Anita George" class="profile-pic shadow-lg">
       <br />
       <h2 class="typewriter"><span id="dynamic-text" class="text-primary"></span></h2>
-      
-      <div class="glass p-4 my-4" style="background: linear-gradient(135deg, #1a1a1a, #2c0d56); backdrop-filter: blur(10px); border-radius: 12px; color: white;">
+
+      <div class="glass p-4 my-4"
+        style="background: linear-gradient(135deg, #1a1a1a, #2c0d56); backdrop-filter: blur(10px); border-radius: 12px; color: white;">
         <p class="text-start fs-7">
-          I’m Anita George, an AI and full-stack developer with over <strong>six years</strong> of industry experience, passionate about
-          building intelligent systems that merge machine learning, cloud technologies, and scalable architectures. 
-          <br/> <br/>
-          My work spans LLMs, RAG pipelines, and sustainable tech, where I thrive on solving complex problems and turning
+          I’m Anita George, an AI and full-stack developer with over <strong>six years</strong> of industry experience,
+          passionate about
+          building intelligent systems that merge machine learning, cloud technologies, and scalable architectures.
+          <br /> <br />
+          My work spans LLMs, RAG pipelines, and sustainable tech, where I thrive on solving complex problems and
+          turning
           ideas into reliable solutions. Beyond code, I enjoy leading teams, mentoring peers, and bridging research with
           real-world impact, always driven by the belief that the world runs on probabilities and innovation.
         </p>
       </div>
-      
+
 
       <div class="social-icons mt-4">
         <a href="https://www.linkedin.com/in/anita-geo" target="_blank" class="me-3"><i
