@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anita George Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: #0b0b0b;
+      color: #f1f1f1;
+    }
+
+    .navbar,
+    footer {
+      background: #000;
+    }
+
+    .navbar a,
+    .navbar-brand,
+    footer p {
+      color: #d0b3ff !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .text-primary {
+      color: #c084fc !important;
+    }
+
+    .btn-outline-primary {
+      border-color: #c084fc;
+      color: #c084fc;
+    }
+
+    .btn-outline-primary:hover {
+      background-color: #c084fc;
+      color: #fff;
+    }
+
+    .card {
+      background: #1a1a1a;
+      color: #f1f1f1;
+      border: 1px solid #2d2d2d;
+    }
+
+    .project-icon,
+    .edu-image {
+      border: 2px solid #c084fc;
+    }
+
+    .profile-pic {
+      width: 50vh;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ed2c39;
+    }
+
+    .typewriter {
+      display: inline-block;
+      border-right: 2px solid #c084fc;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .text-muted {
+      color: #ffffff !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Menu -->
+  <header class="py-3">
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">
+        Anita Acha George <br>
+        <i class="fas fa-graduation-cap"></i>
+        MS CS, Northeastern University
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work-experience">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section with Image and Animation -->
+  <section id="home" class="d-flex align-items-center" style="height: 100vh;">
+    <div class="container text-center">
+      <h1 class="display-4 mb-3">Hello, I'm <span class="text-primary">Anita George</span></h1>
+      <img src=".\images\Intro_1.jpeg" alt="Anita George" class="profile-pic shadow-lg">
+      <br />
+      <h2 class="typewriter"><span id="dynamic-text" class="text-primary"></span></h2>
+      <div class="social-icons mt-4">
+        <a href="https://www.linkedin.com/in/anita-geo" target="_blank" class="me-3"><i
+            class="fab fa-linkedin fa-2x text-primary"> </i></a>
+        <a href="https://github.com/anita-geo" target="_blank" class="me-3"><i class="fab fa-github fa-2x text-primary">
+          </i></a>
+        <a href="https://stackoverflow.com/users/8403882/anita-george/" target="_blank"><i
+            class="fab fa-brands fa-stack-overflow fa-2x text-primary"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="work-experience" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Work Experience</h2>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="text-primary">Graduate Teaching Assistant</h3>
+          <p class="text-muted">Khoury College of Computer Sciences, Northeastern University | Boston, MA, USA
+            <br><strong>Spring 2024, Fall 2024, Sep 2025 – Present</strong>
+          </p>
+          <ul>
+            <li>Efficiently empower professors in academic administration, orchestrating office hours, evaluating
+              student assignments, and delivering targeted feedback to an extensive cohort of over 200 learners for
+              Database Management System</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="text-primary">AI Software Development Engineer Intern</h3>
+          <p class="text-muted">Schneider Electric | Foxboro, MA, USA <br><strong>May 2025 – July 2025</strong></p>
+          <ul>
+            <li>Built full-stack Gen AI tools using React, and Python, integrating LLMs and prompt engineering for
+              internal knowledge systems.
+            </li>
+            <li>Designed RAG pipelines with embedding models and vector databases (Milvus, Quadrant) to enable scalable
+              semantic search.</li>
+            <li>Fine-tuned OpenAI models and conducted model evaluation to improve response accuracy in domain-specific
+              applications.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="text-primary">Senior Software Engineer</h3>
+          <p class="text-muted">H&R Block | Trivandrum, India <br><strong>Sept 2022 – Aug 2023</strong></p>
+          <ul>
+            <li>Led development of a tax expert support tool as part of the Omnichannel Core Team, delivering
+              customizable workflows and seamless IRS form validation while ensuring full regulatory compliance.
+            </li>
+            <li>Maintained a high-availability Azure-based platform serving 100K+ active users during peak tax season,
+              proactively monitored system health to ensure minimal disruptions and optimal performance.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="text-primary">Senior Software Engineer</h3>
+          <p class="text-muted">QBurst Technologies Pvt. Ltd. | Trivandrum, India <br><strong>July 2017 – Sept
+              2022</strong></p>
+          <ul>
+            <li>Modernized legacy systems by building scalable full-stack enterprise solutions using .NET Core, Angular,
+              and React across mortgage, insurance, payroll, and education domains.
+            </li>
+            <li>Applied CQRS, Event Sourcing, and microservices architecture to design clean, maintainable RESTful
+              services, reducing technical debt by 40% and increasing deployment velocity by 30%.
+            </li>
+            <li>Led containerized deployments using Docker and Azure Kubernetes Service (AKS), and integrated Redis and
+              RabbitMQ to support event-driven microservices processing millions of messages monthly.</li>
+            <li>Collaborated in agile teams, participated in architectural reviews, and leveraged Azure services (e.g.,
+              App Services, Functions, Cosmos DB, VNet) for cloud-native solutions.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Education</h2>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="text-primary">Master of Science in Computer Science</h3>
+          <p class="text-muted">Northeastern University, Boston, MA <br><strong>Jan 2024 – Dec 2025</strong></p>
+          <p><strong>GPA:</strong> 4.0/4.0</p>
+          <a href="./documents/Academic Transcript.pdf" target="_blank" class="btn btn-outline-primary mt-3">View
+            Transcript</a>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="text-primary">Bachelor of Technology in Computer Science & Engineering</h3>
+          <p class="text-muted">University of Kerala, India <br></p>
+          <p><strong>GPA:</strong> 8.71/10.0</p>
+          <a href="./documents/Degree Certificate - Anita George.jpg" target="_blank"
+            class="btn btn-outline-primary mt-3">View Degree</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center display-4 mb-5">Technical Skills</h2>
+
+      <div class="row text-center g-4">
+
+        <!-- Languages -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 skill-card">
+            <div class="card-body">
+              <i class="fas fa-code fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Languages</h5>
+              <p class="card-text">Python, C#, Java</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML Frameworks -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 skill-card">
+            <div class="card-body">
+              <i class="fas fa-brain fa-2x text-success mb-3"></i>
+              <h5 class="card-title">ML Frameworks</h5>
+              <p class="card-text">scikit-learn, PyTorch, Pandas, NumPy, Hugging Face</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 skill-card">
+            <div class="card-body">
+              <i class="fas fa-database fa-2x text-warning mb-3"></i>
+              <h5 class="card-title">Databases</h5>
+              <p class="card-text">MS SQL, MySQL, MongoDB, Redis, Cosmos DB, Azure Storage</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 skill-card">
+            <div class="card-body">
+              <i class="fas fa-layer-group fa-2x text-danger mb-3"></i>
+              <h5 class="card-title">Frameworks</h5>
+              <p class="card-text">.NET Core, Bot Framework, Flask, Django</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Technologies -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 skill-card">
+            <div class="card-body">
+              <i class="fas fa-globe fa-2x text-info mb-3"></i>
+              <h5 class="card-title">Web Tech</h5>
+              <p class="card-text">JavaScript, Angular, React</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 skill-card">
+            <div class="card-body">
+              <i class="fas fa-cloud fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Cloud</h5>
+              <p class="card-text">Azure, AWS, Google Dialogflow</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patterns -->
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100 skill-card">
+            <div class="card-body">
+              <i class="fas fa-project-diagram fa-2x text-secondary mb-3"></i>
+              <h5 class="card-title">Design Patterns</h5>
+              <p class="card-text">CQRS, Mediator, Event Sourcing, Repository</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps & Testing -->
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100 skill-card">
+            <div class="card-body">
+              <i class="fas fa-tools fa-2x text-dark mb-3"></i>
+              <h5 class="card-title">DevOps & Testing</h5>
+              <p class="card-text">Terraform, Docker, K8s, Azure DevOps, xUnit, JUnit, SonarLint, SonarQube</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Animations -->
+  <style>
+    .skill-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-card i {
+      transition: transform 0.4s ease, color 0.4s ease;
+    }
+
+    .skill-card:hover i {
+      transform: scale(1.2) rotate(10deg);
+      color: #0d6efd;
+      /* Bootstrap primary blue on hover */
+    }
+  </style>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center display-4 mb-4">Projects</h2>
+
+      <div class="text-center">
+        <p class="lead text-muted">I’m currently updating projects that showcase my skills in AI, full-stack, and cloud
+          engineering.</p>
+        <p class="text-muted">This section will be updated soon with detailed case studies and demos.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Certifications</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="text-primary">Azure AI Engineer Associate</h4>
+              <p class="text-muted">Issued by Microsoft</p>
+              <a href="https://learn.microsoft.com/api/credentials/share/en-us/AnitaGeorge-8745/EA3AAE5010A1786A?sharingId"
+                class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="text-primary">AWS Academy Cloud Architecting - Trained</h4>
+              <p class="text-muted">Issued by Amazon Web Services</p>
+              <a href="https://www.credly.com/badges/e1b8422a-12ad-4146-a1da-418c1162ef03/linked_in_profile"
+                class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="text-primary">AWS Academy Cloud Foundations - Trained</h4>
+              <p class="text-muted">Issued by Amazon Web Services</p>
+              <a href="https://www.credly.com/badges/2ec08ec8-608e-49f3-ba8e-2ac317b814d5/linked_in_profile"
+                class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="text-primary">DAT236x: Deep Learning Explained</h4>
+              <p class="text-muted">Issued by edX</p>
+              <a href="https://courses.edx.org/certificates/5668f3667cff45b1b51baea20b1198d5"
+                class="btn btn-outline-primary">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Publications</h2>
+      <div class="card mb-4">
+
+
+        <div class="card-body">
+          <h4 class="text-primary">Golden Aid</h4>
+          <p class="text-muted">
+            An emergency ambulance system: Developed a GPS-based Windows application for ambulance tracking,
+            enabling traffic signals to turn green based on ambulance proximity.
+          </p>
+          <a href="https://ieeexplore.ieee.org/abstract/document/8076818" target="_blank" rel="noopener"
+            class="btn btn-outline-primary btn-sm">
+            View on IEEE
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p>© 2025 Anita George | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const phrases = [
+      "I build AI-powered systems.",
+      "I am a full-stack developer.",
+      "I innovate with cloud and ML.",
+      "I solve complex problems.",
+      "I love sustainable tech."
+    ];
+
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingSpeed = 100;
+    const deletingSpeed = 50;
+    const pauseDuration = 1000;
+    const dynamicText = document.getElementById('dynamic-text');
+
+    function typePhrase() {
+      const currentPhrase = phrases[phraseIndex];
+      if (!isDeleting) {
+        dynamicText.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === currentPhrase.length) {
+          setTimeout(() => isDeleting = true, pauseDuration);
+        }
+      } else {
+        dynamicText.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          isDeleting = false;
+        }
+      }
+      const speed = isDeleting ? deletingSpeed : typingSpeed;
+      setTimeout(typePhrase, speed);
+    }
+    document.addEventListener('DOMContentLoaded', typePhrase);
+  </script>
+</body>
+
+</html>
