@@ -106,7 +106,30 @@
     .skill-card:hover i {
       transform: scale(1.2) rotate(10deg);
       color: #0d6efd;
-      /* Bootstrap primary blue on hover */
+    }
+
+    .project-card {
+      background: linear-gradient(135deg, #1a1a1a, #2c0d56);
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .project-card .accordion-button {
+      background: transparent !important;
+      color: #ffffff !important;
+    }
+
+    .project-card .accordion-button::after {
+      filter: invert(1) !important;
+    }
+
+    .project-card .accordion-button:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .project-card .accordion-body {
+      color: #ffffff;
     }
   </style>
 </head>
@@ -149,13 +172,13 @@
         style="background: linear-gradient(135deg, #1a1a1a, #2c0d56); backdrop-filter: blur(10px); border-radius: 12px; color: white;">
         <p class="text-start fs-7">
           I’m Anita George, an AI and full-stack developer with over <strong>six years</strong> of industry experience,
-          passionate about
-          building intelligent systems that merge machine learning, cloud technologies, and scalable architectures.
+          passionate about building intelligent systems that merge machine learning, cloud technologies, and scalable
+          architectures.
           <br /> <br />
           My work spans LLMs, RAG pipelines, and sustainable tech, where I thrive on solving complex problems and
-          turning
-          ideas into reliable solutions. Beyond code, I enjoy leading teams, mentoring peers, and bridging research with
-          real-world impact, always driven by the belief that the world runs on probabilities and innovation.
+          turning ideas into reliable solutions. Beyond code, I enjoy leading teams, mentoring peers, and bridging
+          research with real-world impact, always driven by the belief that the world runs on probabilities and
+          innovation.
         </p>
       </div>
 
@@ -182,10 +205,14 @@
             <br>Spring 2024, Fall 2024, <strong>Sep 2025 – Present</strong>
           </p>
           <ul>
-            <li>Efficiently empower professors in academic administration, orchestrating office hours, evaluating
-              student assignments, and delivering targeted feedback to an extensive cohort of over 200 learners for
-              Database Management System</li>
+            <li>Led support for <strong>300+ students</strong> in the Database Management Systems (DBMS) course as Lead
+              TA, addressing queries and grading assignments/exams.</li>
+            <li>Evaluated <strong>full-stack web application projects</strong>, reviewing design decisions, database
+              schemas, SQL, NoSQL, and normalization to ensure technical accuracy and best practices.</li>
+            <li>Conducted <strong>weekly office hours and recitations</strong> to explain relational schema design,
+              indexing, and query optimization, improving student comprehension and performance.</li>
           </ul>
+
         </div>
       </div>
       <div class="card mb-4">
@@ -193,13 +220,22 @@
           <h3 class="text-primary">AI Software Development Engineer Intern</h3>
           <p class="text-muted">Schneider Electric | Foxboro, MA, USA <br><strong>Jan 2025 – July 2025</strong></p>
           <ul>
-            <li>Built full-stack Gen AI tools using React, and Python, integrating LLMs and prompt engineering for
-              internal knowledge systems.
+            <li><strong>Built</strong> full-stack Gen AI tools using <strong>React</strong> and <strong>Python</strong>,
+              integrating <strong>Large Language Models (LLMs)</strong>, <strong>prompt engineering</strong>, and
+              <strong>RAG pipelines</strong>, improving knowledge retrieval efficiency by <strong>50%</strong>.
             </li>
-            <li>Designed RAG pipelines with embedding models and vector databases (Milvus, Quadrant) to enable scalable
-              semantic search.</li>
-            <li>Fine-tuned OpenAI models and conducted model evaluation to improve response accuracy in domain-specific
-              applications.</li>
+
+            <li><strong>Designed</strong> and deployed <strong>semantic search workflows</strong> with <strong>embedding
+                models</strong> and <strong>vector databases (Milvus, Quadrant, FAISS)</strong>, reducing artifact
+              lookup time in <strong>Azure DevOps</strong> and <strong>Jira</strong> by <strong>60%</strong>.</li>
+
+            <li><strong>Created</strong> <strong>scoring mechanisms</strong> for artifacts (Epics, Features, Test Cases
+              etc.), improving backlog quality and <strong>Project Manager efficiency</strong> by <strong>30%</strong>.
+            </li>
+
+            <li><strong>Collaborated</strong> directly with the VP of Digital Innovation, presenting prototypes and
+              aligning AI solutions with strategic business objectives. Led weekly demos across cross-functional teams,
+              driving adoption of AI tools across departments.</li>
           </ul>
         </div>
       </div>
@@ -208,11 +244,24 @@
           <h3 class="text-primary">Senior Software Engineer</h3>
           <p class="text-muted">H&R Block | Trivandrum, India <br><strong>Sept 2022 – Aug 2023</strong></p>
           <ul>
-            <li>Led development of a tax expert support tool as part of the Omnichannel Core Team, delivering
-              customizable workflows and seamless IRS form validation while ensuring full regulatory compliance.
+            <li><strong>Developed</strong> an <strong>Angular + .NET Core</strong> “Tax Logic Builder” consolidating
+              <strong>10+ sub-applications</strong> (form definition, calculation builder, help text editor, validation
+              manager, error messaging, field mapping, and form creation), enabling tax specialists to design tax
+              workflows without developer support and <strong>reducing validation setup time</strong> by
+              <strong>50%</strong>.
             </li>
-            <li>Maintained a high-availability Azure-based platform serving 100K+ active users during peak tax season,
-              proactively monitored system health to ensure minimal disruptions and optimal performance.</li>
+
+            <li><strong>Engineered</strong> a <strong>Roslyn-powered dynamic code generation engine</strong> that
+              transformed tax expert configurations into executable <strong>C# code</strong>, <strong>cutting manual
+                coding</strong> by <strong>60%</strong> and <strong>improving IRS compliance accuracy</strong> by
+              <strong>35%</strong>.
+            </li>
+
+            <li><strong>Handled</strong> production incidents during <strong>peak tax season</strong> by implementing
+              proactive monitoring with <strong>Azure Application Insights</strong>, <strong>Azure Monitor</strong>, and
+              <strong>AKS health checks</strong>, <strong>reducing MTTR</strong> by <strong>65%</strong> and ensuring
+              <strong>high availability</strong> for <strong>100K+ concurrent users</strong>.
+            </li>
           </ul>
         </div>
       </div>
@@ -222,16 +271,32 @@
           <p class="text-muted">QBurst Technologies Pvt. Ltd. | Trivandrum, India <br><strong>July 2017 – Sept
               2022</strong></p>
           <ul>
-            <li>Modernized legacy systems by building scalable full-stack enterprise solutions using .NET Core, Angular,
-              and React across mortgage, insurance, payroll, and education domains.
+            <li><strong>Led</strong> the modernization of several legacy systems by re-architecting them into a
+              <strong>Microservices Architecture</strong>, which <strong>increased scalability</strong> by 300% and
+              <strong>improved deployment velocity</strong> by over 75% across the portfolio.
             </li>
-            <li>Applied CQRS, Event Sourcing, and microservices architecture to design clean, maintainable RESTful
-              services, reducing technical debt by 40% and increasing deployment velocity by 30%.
+
+            <li><strong>Architected</strong> a conversational AI platform and various <strong>backend services</strong>
+              using <strong>Azure</strong> that <strong>reduced latency</strong> for customer inquiries by 80% and
+              <strong>increased scalability</strong> to handle a 500% surge in user traffic.
             </li>
-            <li>Led containerized deployments using Docker and Azure Kubernetes Service (AKS), and integrated Redis and
-              RabbitMQ to support event-driven microservices processing millions of messages monthly.</li>
-            <li>Collaborated in agile teams, participated in architectural reviews, and leveraged Azure services (e.g.,
-              App Services, Functions, Cosmos DB, VNet) for cloud-native solutions.
+
+            <li><strong>Implemented</strong> the <strong>CQRS Pattern</strong> and <strong>Event Sourcing</strong> in
+              core business modules, which <strong>improved accuracy</strong> of financial and operational data by 99.9%
+              and <strong>reduced latency</strong> for critical reporting by up to 70%.</li>
+
+            <li><strong>Collaborated</strong> with <strong>cross-functional teams</strong> (Product, Data Science,
+              Design) to define and ship features that <strong>automated workflow</strong> for customers, leading to a
+              40% decrease in support tickets and a significant improvement in user satisfaction.</li>
+
+            <li><strong>Mentored</strong> junior developers through daily <strong>code reviews</strong> and knowledge
+              transfer sessions, elevating team proficiency in <strong>Domain Driven Design</strong>, <strong>scalable
+                systems</strong>, and <strong>event-driven architecture</strong>, which <strong>reduced model
+                drift</strong> and improved overall code quality.</li>
+
+            <li><strong>Refactored</strong> legacy codebases and optimized database schemas and stored procedures,
+              <strong>reducing technical debt</strong> by 40% and <strong>improving accuracy</strong> and performance
+              across key business applications.
             </li>
           </ul>
         </div>
@@ -266,7 +331,7 @@
 
   <section id="skills" class="py-5 bg-dark">
     <div class="container">
-      <h2 class="text-center display-4 mb-5">Technical Skills</h2>
+      <h2 class="text-center mb-5">Technical Skills</h2>
 
       <div class="row text-center g-4">
 
@@ -320,7 +385,7 @@
             <div class="card-body">
               <i class="fas fa-globe fa-2x text-info mb-3"></i>
               <h5 class="card-title">Web Tech</h5>
-              <p class="card-text">JavaScript, Angular, React</p>
+              <p class="card-text">HTML, CSS, JavaScript, TypeScript, Angular, Angular Material, React, Bootstrap</p>
             </div>
           </div>
         </div>
@@ -363,16 +428,199 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-5 bg-dark">
+  <section id="projects" class="py-5">
     <div class="container">
-      <h2 class="text-center display-4 mb-4">Projects</h2>
-
-      <div class="text-center">
-        <p class="lead text-muted">I’m currently updating projects that showcase my skills in AI, full-stack, and cloud
-          engineering.</p>
-        <p class="text-muted">This section will be updated soon with detailed case studies and demos.</p>
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="text-center mb-4">
+        <p class="lead text-light">Showcasing projects in AI, full-stack, and cloud engineering.</p>
       </div>
 
+      <div class="accordion" id="projectsAccordion">
+
+        <!-- Project 1 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+              Agent-Based / LLM Natural Language to SQL System – Present
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Built a <strong>multi-agent and LLM-based system</strong> that interprets user queries, generates SQL,
+              and returns results in natural language. Integrated feedback loops for continuous model fine-tuning,
+              improving accuracy and reliability. Enabled non-technical users to access databases without SQL knowledge,
+              reducing query errors by 40%.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              Dialogue Summarization with Flan-T5 (Full Fine-Tuning & PEFT) – Nov 2024
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Fine-tuned the <strong>Flan-T5 model</strong> for dialogue summarization using both full fine-tuning and
+              <strong>PEFT</strong>. Evaluated using ROUGE metrics, achieving high-quality summaries with reduced
+              compute costs. Demonstrated that PEFT maintains performance while significantly lowering storage and
+              training requirements.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              RAG-based Q&A for Faculty Information – Dec 2024
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Developed a <strong>Retrieval-Augmented Generation chatbot</strong> with sentence-transformer embeddings
+              and a vector database to answer faculty-related queries. Enabled users to quickly retrieve accurate
+              information from a large knowledge base. Improved response relevance by over 30% compared to keyword-based
+              search.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Anomaly Detection in Financial Data – April 2025
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Built an <strong>autoencoder-based anomaly detection system</strong> to identify irregular patterns in
+              financial transactions. Enhanced fraud detection and compliance by detecting subtle anomalies in real
+              time. Reduced false positives by 25% compared to traditional rule-based methods.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              Diabetic Retinopathy Classification – July 2024
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Developed and fine-tuned <strong>CNN models</strong> to classify retinal images into severity stages of
+              diabetic retinopathy. Conducted extensive hyper-parameter tuning and analyzed performance across multiple
+              scenarios. Improved classification accuracy by 15% over baseline models.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              Image Generation with DCGANs – Dec 2024
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Replicated <strong>DCGAN architecture</strong> and trained on MNIST, CelebA, and LSUN datasets to generate
+              realistic images. Experimented with latent space and training parameters for optimal results. Generated
+              high-quality synthetic images closely resembling real data.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+              Handwritten Digits Classification – Apr 2024
+            </button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Built a hybrid model combining <strong>CNN, KNN, and SVM</strong> for handwritten digit recognition on
+              MNIST. Optimized model parameters and fused predictions for higher accuracy. Achieved a 2–3% improvement
+              in classification accuracy over standalone CNN models.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+              Food Image Classification – March 2024
+            </button>
+          </h2>
+          <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Trained a model on the <strong>Food-101 dataset</strong> to classify images into 101 categories. Applied
+              data augmentation and transfer learning to improve performance. Achieved over 85% accuracy on the test
+              set.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading9">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+              Sentiment Analysis for Restaurants – Feb 2024
+            </button>
+          </h2>
+          <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Developed a model to analyze restaurant reviews and categorize them into sentiment clusters. Used NLP
+              preprocessing and embeddings to enhance feature representation. Enabled actionable insights for restaurant
+              performance and customer feedback.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 10 -->
+        <div class="accordion-item project-card">
+          <h2 class="accordion-header" id="heading10">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+              GetFitGo – Full-Stack Fitness Application – Dec 2023
+            </button>
+          </h2>
+          <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+            data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+              Built a <strong>fitness application</strong> using React, Flask, and MySQL for activity tracking, workout
+              plans, and progress visualization. Implemented a responsive UI and secure backend API endpoints. Improved
+              user engagement with personalized tracking and goal-setting features.
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
